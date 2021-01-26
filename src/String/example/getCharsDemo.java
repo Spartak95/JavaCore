@@ -1,6 +1,7 @@
 package String.example;
 
 public class getCharsDemo {
+
     public static void main(String[] args) {
        String s = "Սա getChars() մեթոդի ցուցադրումն է";
        int start = 3;
@@ -9,5 +10,6 @@ public class getCharsDemo {
        s.getChars(start, end, buf, 0);
        System.out.println(buf);
     }
+
 }
 
