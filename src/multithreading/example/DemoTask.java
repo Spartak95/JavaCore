@@ -1,16 +1,18 @@
 package multithreading.example;
 
+import Final.Final;
+
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class DemoTask extends Thread{
-    private static Final AtomicInteger nextId   = new AtomicInteger(0);
+    private static final AtomicInteger nextId = new AtomicInteger(0);
     public DemoTask(String name) {
         super(name);
         start();
     }
     // Thread local variable containing each thread's ID
-    private static Final ThreadLocal<Integer> threadId = new ThreadLocal<Integer>() {
+    private static final ThreadLocal<Integer> threadId = new ThreadLocal<Integer>() {
         @Override
         protected Integer initialValue() {
             return nextId.getAndIncrement();
@@ -21,7 +23,7 @@ public class DemoTask extends Thread{
         return threadId.get();
     }
     // Returns the current thread's starting timestamp
-    private static Final ThreadLocal<Date> startDate = new ThreadLocal<Date>() {
+    private static final ThreadLocal<Date> startDate = new ThreadLocal<Date>() {
         protected Date initialValue() {
             return new Date();
         }

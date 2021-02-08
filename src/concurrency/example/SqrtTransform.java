@@ -5,7 +5,7 @@ import java.util.concurrent.RecursiveAction;
 public class SqrtTransform extends RecursiveAction {
     // տվյալ օրինակում սահմանային արժեքը
     // կամայական սահմանվում է 1000
-    private Final int seqThreshold = 1000;
+    private final int seqThreshold = 1000;
     // մշակվող զանգվածը
     private double[] data;
     // որոշվում է մշակվող տվյալների հատվածը

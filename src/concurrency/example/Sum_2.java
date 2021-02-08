@@ -6,7 +6,7 @@ import java.util.concurrent.RecursiveTask;
 // զանգվածների էլեմենտների արժեքների գումարը հաշվելու համար
 public class Sum_2 extends RecursiveTask<Double> {
     // սահմանային արժեքը
-    private Final int seqThresHold = 500;
+    private final int seqThresHold = 500;
     // մշակվող զանգվածը
     private double[] data;
     // որոշվում է զանգվածի էլեմենտների մշակման սահմանը

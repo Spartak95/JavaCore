@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class LinkedHashMapDemo {
-    private static Final int MAX_ENTRIES = 5;
+    private static final int MAX_ENTRIES = 5;
     public static void main(String[] args) {
         LinkedHashMap<Integer, String> lhm = new LinkedHashMap<Integer, String>() {
             protected boolean removeEldestEntry(Map.Entry<Integer, String> eldest) {
